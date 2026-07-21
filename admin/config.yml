@@ -1,13 +1,15 @@
 backend:
   name: git-gateway
+  repo: johanwahyus/Profile
   branch: main
+  # identity_url dan gateway_url di bawah ini akan diganti dengan URL asli
+  # yang diberikan oleh DecapBridge setelah kamu daftar (lihat README.md)
+  identity_url: https://auth.decapbridge.com/sites/GANTI-DENGAN-SITE-ID-KAMU
+  gateway_url: https://gateway.decapbridge.com
 
 # Tempat gambar yang diupload lewat CMS akan disimpan di repo
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-
-# Supaya editor langsung lihat halaman aslinya saat preview (opsional, aman dihapus kalau bikin bingung)
-site_url: https://REPLACE-DENGAN-URL-WEBSITE-KAMU
 
 collections:
   - name: "data"

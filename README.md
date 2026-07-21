@@ -25,30 +25,34 @@ ikut berubah — tanpa sentuh HTML. Nah, CMS di `/admin` itu fungsinya jadi
 
 ## Setup supaya CMS-nya bisa dipakai (sekali saja di awal)
 
-CMS ini butuh **Netlify** untuk mengurus login & penyimpanan (gratis, dan
-kode kamu tetap di GitHub seperti biasa — Netlify cuma "menyambungkan").
+> Catatan: Netlify baru saja menghentikan fitur "Identity" yang biasa dipakai
+> untuk login CMS. Sebagai gantinya, kita pakai **DecapBridge** — layanan
+> gratis yang dibuat khusus untuk kasus ini, dan setupnya malah lebih simpel
+> (tidak perlu bikin GitHub OAuth App sendiri).
 
-1. **Upload semua file** di folder ini ke repository GitHub kamu (termasuk
-   folder `content/` dan `admin/`).
-2. Buka **netlify.com** → daftar/login pakai akun GitHub kamu (gratis).
-3. Klik **Add new site → Import an existing project** → pilih repo GitHub
-   kamu. Biarkan pengaturan default, klik **Deploy**.
-   - Setelah ini, website kamu bisa diakses lewat domain dari Netlify
-     (misal `nama-acak.netlify.app`, bisa diganti nama di Site settings).
-4. Di dashboard Netlify, buka menu **Identity** → klik **Enable Identity**.
-5. Di **Identity → Settings → Registration**, ubah ke **Invite only**
-   (supaya cuma kamu yang bisa daftar akun admin).
-6. Masih di menu Identity, klik **Invite users** → masukkan email kamu
-   sendiri → cek inbox email → klik link undangan → buat password.
-7. Buka menu **Identity → Services**, aktifkan **Git Gateway** (biar
-   Identity terhubung ke repo GitHub kamu).
-8. Buka `admin/config.yml`, ganti baris `site_url` dengan alamat website
-   Netlify kamu (boleh dihapus juga kalau bingung, tidak wajib).
+1. **Pastikan semua file** (termasuk folder `content/` dan `admin/`) sudah
+   ter-upload ke repo GitHub kamu, dan website sudah tayang di Netlify.
+2. Buka **decapbridge.com** → daftar/login (bisa pakai akun GitHub).
+3. Klik **Create a Site** (atau tombol serupa untuk menambah situs baru).
+4. Isi informasi yang diminta:
+   - **Repository**: pilih repo GitHub kamu (`johanwahyus/Profile`)
+   - **Admin URL**: alamat website Netlify kamu + `/admin`, misal
+     `https://johanwahyus.netlify.app/admin`
+5. Setelah situs dibuat, DecapBridge akan kasih kamu potongan konfigurasi
+   berisi `identity_url` dan `gateway_url` yang unik untuk situsmu.
+6. Buka file `admin/config.yml` di repo kamu (lewat VS Code), lalu ganti
+   baris `identity_url` dengan yang diberikan DecapBridge (baris `repo` dan
+   `gateway_url` biasanya sudah cocok, tapi cek lagi biar sama persis).
+7. **Commit** dan **Sync Changes** perubahan itu lewat VS Code seperti
+   biasa, supaya ter-upload ke GitHub dan Netlify otomatis build ulang.
+8. Di dashboard DecapBridge, cari menu **Invite users** / **Collaborators**
+   → masukkan email kamu sendiri → cek inbox → ikuti link untuk membuat
+   password login.
 
 ## Cara pakai CMS setelah setup
 
 1. Buka `https://[nama-website-kamu].netlify.app/admin/`
-2. Login pakai email & password yang tadi kamu buat.
+2. Login pakai email & password dari DecapBridge tadi.
 3. Edit bagian yang kamu mau (Hero, Tentang, CV, Keahlian, Portfolio, Blog,
    Kontak) — semua lewat form, tinggal isi/upload gambar.
 4. Klik **Publish** — perubahan otomatis ter-*commit* ke GitHub dan
@@ -62,9 +66,10 @@ Tidak perlu edit HTML sama sekali.
 
 ## Kalau mau tetap pakai GitHub Pages (tanpa Netlify)
 
-Bisa, tapi CMS-nya (`/admin`) tidak akan berfungsi tanpa Netlify Identity —
-kamu tetap harus edit `content/data.json` manual lewat GitHub kalau begitu.
-Jadi kalau mau fitur login beneran, ikuti langkah Netlify di atas.
+Bisa, tapi CMS-nya (`/admin`) tetap butuh DecapBridge untuk urusan login,
+jadi Netlify tetap dibutuhkan hanya untuk **hosting website-nya** saja
+(gratis). Kalau nggak mau pakai CMS sama sekali, kamu tetap bisa edit
+`content/data.json` manual lewat GitHub kapan saja.
 
 ## Cara coba di komputer sendiri
 
