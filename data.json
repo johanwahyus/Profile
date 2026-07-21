@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "eyebrow": "STAFF OFFICE — INDONESIA",
+    "name_line1": "Johan Wahyu",
+    "name_line2": "Saputro",
+    "tagline": "Manusia yang suka dengan banyak hal."
+  },
+  "about": {
+    "photo": "https://placehold.co/480x480/131B2E/A9B4C7?text=Foto+Profil",
+    "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan. Saat ini saya bekerja sebagai Staff Office, setelah sebelumnya berpengalaman sebagai Customer Service di PT JMTO selama beberapa tahun. Saya orang yang suka dengan banyak hal — mulai dari urusan kantor, editing foto, sampai pelan-pelan belajar membuat website lewat HTML, CSS, dan JavaScript.",
+    "text2": "Lewat website ini, saya ingin punya ruang untuk berbagi cerita, pengalaman kerja, dan hal-hal kecil yang saya pelajari sepanjang perjalanan."
+  },
+  "cv": {
+    "experience": [
+      {
+        "date": "2026 — Sekarang",
+        "title": "Staff Office",
+        "desc": "Posisi saat ini, menangani pekerjaan administrasi dan operasional kantor."
+      },
+      {
+        "date": "2021 — 2026",
+        "title": "Customer Service — PT JMTO",
+        "desc": "Menangani layanan pelanggan selama kurang lebih 5 tahun."
+      }
+    ],
+    "education": [
+      {
+        "date": "Riwayat Pendidikan",
+        "title": "SMA Pilangkenceng",
+        "desc": "Jenjang pendidikan terakhir."
+      }
+    ],
+    "cert_note": "Sertifikat & penghargaan — menyusul"
+  },
+  "skills": {
+    "tools": ["HTML", "CSS", "JavaScript (dasar)", "Microsoft Excel", "Microsoft Word", "Editing Foto"],
+    "languages": ["Bahasa Indonesia", "Bahasa Jawa"]
+  },
+  "portfolio": [
+    { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+01", "caption": "Judul karya 1" },
+    { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+02", "caption": "Judul karya 2" },
+    { "image": "https://placehold.co/600x800/131B2E/6F7C97?text=Karya+03", "caption": "Judul karya 3" },
+    { "image": "https://placehold.co/600x600/131B2E/6F7C97?text=Karya+04", "caption": "Judul karya 4" },
+    { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+05", "caption": "Judul karya 5" },
+    { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+06", "caption": "Judul karya 6" }
+  ],
+  "blog": {
+    "tags": ["Cerita", "Random"],
+    "posts": [
+      { "caption": "Tulisan pertama tentang perjalanan hidup akan segera terbit." },
+      { "caption": "Ruang untuk cerita random berikutnya." }
+    ]
+  },
+  "contact": {
+    "email": "Johan.wahyu.saputro.05@gmail.com",
+    "github": "https://github.com/johanwahyus",
+    "github_label": "github.com/johanwahyus",
+    "instagram": "https://instagram.com/johan_wahyus",
+    "instagram_label": "@johan_wahyus",
+    "linkedin": "",
+    "linkedin_label": "Belum ada"
+  }
+}

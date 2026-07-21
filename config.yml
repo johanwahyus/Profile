@@ -1,0 +1,102 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Tempat gambar yang diupload lewat CMS akan disimpan di repo
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# Supaya editor langsung lihat halaman aslinya saat preview (opsional, aman dihapus kalau bikin bingung)
+site_url: https://REPLACE-DENGAN-URL-WEBSITE-KAMU
+
+collections:
+  - name: "data"
+    label: "Konten Website"
+    files:
+      - file: "content/data.json"
+        label: "Semua Konten"
+        name: "data"
+        fields:
+
+          - label: "Hero (Bagian Paling Atas)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Label kecil di atas nama", name: "eyebrow", widget: "string" }
+              - { label: "Nama (baris 1)", name: "name_line1", widget: "string" }
+              - { label: "Nama (baris 2)", name: "name_line2", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+
+          - label: "Tentang Saya"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Foto Profil", name: "photo", widget: "image" }
+              - { label: "Paragraf 1", name: "text1", widget: "text" }
+              - { label: "Paragraf 2", name: "text2", widget: "text" }
+
+          - label: "CV"
+            name: "cv"
+            widget: "object"
+            fields:
+              - label: "Pengalaman Kerja"
+                name: "experience"
+                widget: "list"
+                fields:
+                  - { label: "Periode", name: "date", widget: "string" }
+                  - { label: "Judul / Jabatan", name: "title", widget: "string" }
+                  - { label: "Deskripsi", name: "desc", widget: "text" }
+              - label: "Pendidikan"
+                name: "education"
+                widget: "list"
+                fields:
+                  - { label: "Periode / Label", name: "date", widget: "string" }
+                  - { label: "Nama Sekolah/Kampus", name: "title", widget: "string" }
+                  - { label: "Deskripsi", name: "desc", widget: "text" }
+              - { label: "Catatan Sertifikat", name: "cert_note", widget: "string" }
+
+          - label: "Keahlian"
+            name: "skills"
+            widget: "object"
+            fields:
+              - label: "Coding & Tools"
+                name: "tools"
+                widget: "list"
+                field: { label: "Skill", name: "item", widget: "string" }
+              - label: "Bahasa"
+                name: "languages"
+                widget: "list"
+                field: { label: "Bahasa", name: "item", widget: "string" }
+
+          - label: "Portfolio (Galeri Editing Foto)"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "Gambar", name: "image", widget: "image" }
+              - { label: "Judul Karya", name: "caption", widget: "string" }
+
+          - label: "Blog"
+            name: "blog"
+            widget: "object"
+            fields:
+              - label: "Tag/Kategori"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "item", widget: "string" }
+              - label: "Daftar Tulisan"
+                name: "posts"
+                widget: "list"
+                fields:
+                  - { label: "Teks/Judul Tulisan", name: "caption", widget: "text" }
+
+          - label: "Kontak"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Link GitHub", name: "github", widget: "string", required: false }
+              - { label: "Teks GitHub yang ditampilkan", name: "github_label", widget: "string", required: false }
+              - { label: "Link Instagram", name: "instagram", widget: "string", required: false }
+              - { label: "Teks Instagram yang ditampilkan", name: "instagram_label", widget: "string", required: false }
+              - { label: "Link LinkedIn (kosongkan jika belum ada)", name: "linkedin", widget: "string", required: false }
+              - { label: "Teks LinkedIn yang ditampilkan", name: "linkedin_label", widget: "string", required: false }
