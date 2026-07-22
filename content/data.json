@@ -7,8 +7,8 @@
     "photo": "https://placehold.co/720x900/16233F/DCD5C6?text=Foto+Hero"
   },
   "about": {
-    "photo": "https://placehold.co/480x600/EFEBE1/8A8F7F?text=Foto+Profil",
-    "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan. Saat ini saya bekerja sebagai Staff Office, setelah sebelumnya berpengalaman sebagai Customer Service di PT JMTO selama beberapa tahun. Saya orang yang suka dengan banyak hal — mulai dari urusan kantor, editing foto, sampai pelan-pelan belajar membuat website lewat HTML, CSS, dan JavaScript.",
+    "photo": "/assets/uploads/whatsapp-image-2026-07-22-at-11.19.36.jpeg",
+    "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan.",
     "text2": "Lewat website ini, saya ingin punya ruang untuk berbagi cerita, pengalaman kerja, dan hal-hal kecil yang saya pelajari sepanjang perjalanan."
   },
   "cv": {
@@ -20,14 +20,14 @@
       },
       {
         "date": "2021 — 2026",
-        "title": "Customer Service — PT JMTO",
+        "title": "Customer Service ",
         "desc": "Menangani layanan pelanggan selama kurang lebih 5 tahun."
       }
     ],
     "education": [
       {
         "date": "Riwayat Pendidikan",
-        "title": "SMA Pilangkenceng",
+        "title": "Sekolah Menengah Atas (SMA)",
         "desc": "Jenjang pendidikan terakhir."
       }
     ],
@@ -38,9 +38,9 @@
     "languages": ["Bahasa Indonesia", "Bahasa Jawa"]
   },
   "portfolio": [
-    { "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+01", "caption": "Judul karya 1" },
-    { "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+02", "caption": "Judul karya 2" },
-    { "image": "https://placehold.co/600x800/16233F/DCD5C6?text=Karya+03", "caption": "Judul karya 3" },
+    { "image": "/assets/uploads/yb.jpg", "caption": "Vector YB" },
+    { "image": "/assets/uploads/626175606_18328665187169627_2023166285612344786_n.jpg", "caption": "Vector Collab" },
+    { "image": "/assets/uploads/640068530_18569144668019564_1329337692657628641_n.jpg", "caption": "Manipulation Photoshop" },
     { "image": "https://placehold.co/600x600/16233F/DCD5C6?text=Karya+04", "caption": "Judul karya 4" },
     { "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+05", "caption": "Judul karya 5" },
     { "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+06", "caption": "Judul karya 6" }
