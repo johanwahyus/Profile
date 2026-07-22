@@ -48,6 +48,7 @@ collections:
               - { label: "Nama (baris 1)", name: "name_line1", widget: "string" }
               - { label: "Nama (baris 2)", name: "name_line2", widget: "string" }
               - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Foto Hero", name: "photo", widget: "image" }
 
           - label: "Tentang Saya"
             name: "about"
@@ -96,6 +97,21 @@ collections:
             fields:
               - { label: "Gambar", name: "image", widget: "image" }
               - { label: "Judul Karya", name: "caption", widget: "string" }
+
+          - label: "Karya Rajutan"
+            name: "rajutan"
+            widget: "list"
+            fields:
+              - { label: "Gambar", name: "image", widget: "image" }
+              - { label: "Judul Karya", name: "caption", widget: "string" }
+
+          - label: "Buku yang Sudah Dibaca"
+            name: "books"
+            widget: "list"
+            fields:
+              - { label: "Sampul Buku", name: "cover", widget: "image" }
+              - { label: "Judul Buku", name: "title", widget: "string" }
+              - { label: "Penulis", name: "author", widget: "string" }
 
           - label: "Testimoni"
             name: "testimonials"

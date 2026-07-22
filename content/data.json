@@ -3,10 +3,11 @@
     "eyebrow": "STAFF OFFICE — INDONESIA",
     "name_line1": "Johan Wahyu",
     "name_line2": "Saputro",
-    "tagline": "Manusia yang suka dengan banyak hal."
+    "tagline": "Manusia yang suka dengan banyak hal.",
+    "photo": "https://placehold.co/720x900/16233F/DCD5C6?text=Foto+Hero"
   },
   "about": {
-    "photo": "https://placehold.co/480x480/131B2E/A9B4C7?text=Foto+Profil",
+    "photo": "https://placehold.co/480x600/EFEBE1/8A8F7F?text=Foto+Profil",
     "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan. Saat ini saya bekerja sebagai Staff Office, setelah sebelumnya berpengalaman sebagai Customer Service di PT JMTO selama beberapa tahun. Saya orang yang suka dengan banyak hal — mulai dari urusan kantor, editing foto, sampai pelan-pelan belajar membuat website lewat HTML, CSS, dan JavaScript.",
     "text2": "Lewat website ini, saya ingin punya ruang untuk berbagi cerita, pengalaman kerja, dan hal-hal kecil yang saya pelajari sepanjang perjalanan."
   },
@@ -37,19 +38,28 @@
     "languages": ["Bahasa Indonesia", "Bahasa Jawa"]
   },
   "portfolio": [
-    { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+01", "caption": "Judul karya 1" },
-    { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+02", "caption": "Judul karya 2" },
-    { "image": "https://placehold.co/600x800/131B2E/6F7C97?text=Karya+03", "caption": "Judul karya 3" },
-    { "image": "https://placehold.co/600x600/131B2E/6F7C97?text=Karya+04", "caption": "Judul karya 4" },
-    { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+05", "caption": "Judul karya 5" },
-    { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+06", "caption": "Judul karya 6" }
+    { "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+01", "caption": "Judul karya 1" },
+    { "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+02", "caption": "Judul karya 2" },
+    { "image": "https://placehold.co/600x800/16233F/DCD5C6?text=Karya+03", "caption": "Judul karya 3" },
+    { "image": "https://placehold.co/600x600/16233F/DCD5C6?text=Karya+04", "caption": "Judul karya 4" },
+    { "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+05", "caption": "Judul karya 5" },
+    { "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+06", "caption": "Judul karya 6" }
+  ],
+  "rajutan": [
+    { "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+01", "caption": "Judul karya rajutan 1" },
+    { "image": "https://placehold.co/600x600/EFEBE1/8A8F7F?text=Rajutan+02", "caption": "Judul karya rajutan 2" },
+    { "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+03", "caption": "Judul karya rajutan 3" }
   ],
   "testimonials": [
     {
-      "quote": "Contoh testimoni akan tampil di sini. Edit atau tambah lewat halaman admin.",
+      "quote": "Contoh testimoni akan tampil di sini sebagai kutipan besar. Edit atau tambah lewat halaman admin.",
       "name": "Nama Pemberi Testimoni",
       "role": "Jabatan / Hubungan"
     }
+  ],
+  "books": [
+    { "cover": "https://placehold.co/300x450/16233F/DCD5C6?text=Cover", "title": "Judul Buku 1", "author": "Nama Penulis" },
+    { "cover": "https://placehold.co/300x450/16233F/DCD5C6?text=Cover", "title": "Judul Buku 2", "author": "Nama Penulis" }
   ],
   "blog": {
     "tags": ["Cerita", "Random"],

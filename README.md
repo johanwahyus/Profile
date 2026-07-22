@@ -98,3 +98,27 @@ extension **Live Server** di VS Code, lalu buka `index.html` dari situ.
   website, buat akun gratis di analytics.google.com, ambil kode "Tracking
   ID"-nya (formatnya `G-XXXXXXX`), lalu kasih ke aku atau tempel sendiri
   potongan kode dari Google Analytics ke bagian `<head>` di `index.html`.
+
+## Redesign editorial (navy + putih) — PENTING dibaca dulu
+
+Website ini baru saja di-redesign total gayanya jadi lebih editorial/elegan
+(tipografi besar, tema navy + putih), dan ada 2 section baru:
+**Karya Rajutan** dan **Buku yang Sudah Dibaca**.
+
+⚠️ **File `content/data.json` di paket ini menimpa/mengganti total** file
+lama di repo kamu — termasuk kalau kamu sudah sempat edit sesuatu lewat
+`/admin` sebelumnya (misalnya Instagram sudah aku sesuaikan ke
+`@johan.wahyus`, tapi field lain yang sempat kamu ubah lewat CMS mungkin
+perlu dicek ulang dan diisi lagi lewat `/admin` setelah upload file baru
+ini).
+
+**Langkah upload:**
+1. Timpa `index.html`, `style.css`, `script.js`, `content/data.json`, dan
+   `admin/config.yml` di project VS Code kamu dengan versi baru ini.
+2. Commit → Sync Changes seperti biasa.
+3. Tunggu Netlify build ulang, cek hasil di website utama.
+4. Buka `/admin`, cek semua bagian (terutama yang sebelumnya sudah kamu isi
+   manual) masih sesuai — kalau ada yang perlu diisi ulang, tinggal edit
+   lagi lewat form seperti biasa.
+5. Isi section baru **Karya Rajutan** dan **Buku yang Sudah Dibaca** lewat
+   `/admin` dengan foto/karya aslimu.

@@ -4,24 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Johan Wahyu Saputro</title>
-<meta name="description" content="Website pribadi Johan Wahyu Saputro — cerita, CV, dan portfolio.">
+<meta name="description" content="Website pribadi Johan Wahyu Saputro — cerita, CV, portfolio, dan hobi.">
 
-<!-- Favicon (ikon kecil di tab browser) -->
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 
-<!-- Preview saat link di-share ke WhatsApp/Instagram/dll -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Johan Wahyu Saputro">
-<meta property="og:description" content="Website pribadi Johan Wahyu Saputro — cerita, CV, dan portfolio.">
+<meta property="og:description" content="Website pribadi Johan Wahyu Saputro — cerita, CV, portfolio, dan hobi.">
 <meta property="og:image" content="https://johanwahyus.netlify.app/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- Font: Fraunces untuk judul (berkarakter), Inter untuk teks, JetBrains Mono untuk label kecil -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -39,9 +36,9 @@
       <ul class="nav__links" id="navLinks">
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#pengalaman">CV</a></li>
-        <li><a href="#keahlian">Keahlian</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#portfolio">Editing</a></li>
+        <li><a href="#rajutan">Rajutan</a></li>
+        <li><a href="#buku">Buku</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#kontak" class="nav__cta">Kontak</a></li>
       </ul>
@@ -52,14 +49,18 @@
 
     <!-- ===== HERO ===== -->
     <section id="beranda" class="hero">
-      <div class="hero__pattern" aria-hidden="true"></div>
-      <div class="hero__inner">
-        <p class="eyebrow" id="heroEyebrow"></p>
-        <h1 class="hero__title" id="heroTitle"></h1>
-        <p class="hero__tagline" id="heroTagline"></p>
-        <div class="hero__actions">
-          <a href="#pengalaman" class="btn btn--primary">Lihat CV</a>
-          <a href="#kontak" class="btn btn--ghost">Hubungi Saya</a>
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow" id="heroEyebrow"></p>
+          <h1 class="hero__title" id="heroTitle"></h1>
+          <p class="hero__tagline" id="heroTagline"></p>
+          <div class="hero__actions">
+            <a href="#kontak" class="btn btn--primary">Hubungi Saya</a>
+            <a href="#pengalaman" class="btn btn--ghost">Lihat CV</a>
+          </div>
+        </div>
+        <div class="hero__photo-wrap">
+          <img src="" alt="Foto Johan Wahyu Saputro" class="hero__photo" id="heroPhoto">
         </div>
       </div>
     </section>
@@ -67,12 +68,12 @@
     <!-- ===== TENTANG ===== -->
     <section id="tentang" class="section">
       <div class="section__inner about">
-        <div class="about__frame">
+        <div class="about__media">
           <img src="" alt="Foto profil Johan Wahyu Saputro" class="about__photo" id="aboutPhoto">
         </div>
         <div class="about__content">
           <p class="eyebrow">Tentang Saya</p>
-          <h2 class="section__title">Sedikit cerita soal saya</h2>
+          <h2 class="section__title">Sedikit cerita<br>soal saya</h2>
           <p class="about__text" id="aboutText1"></p>
           <p class="about__text" id="aboutText2"></p>
         </div>
@@ -80,13 +81,15 @@
     </section>
 
     <!-- ===== PENGALAMAN / CV ===== -->
-    <section id="pengalaman" class="section section--alt">
+    <section id="pengalaman" class="section section--paper-alt">
       <div class="section__inner">
         <p class="eyebrow">Perjalanan</p>
         <h2 class="section__title">Pendidikan &amp; Pengalaman</h2>
 
-        <ol class="timeline" id="cvExperience"></ol>
-        <ol class="timeline" id="cvEducation"></ol>
+        <div class="cv-layout">
+          <ol class="timeline" id="cvExperience"></ol>
+          <ol class="timeline" id="cvEducation"></ol>
+        </div>
 
         <div class="cert-note">
           <span id="certNote"></span>
@@ -113,12 +116,12 @@
       </div>
     </section>
 
-    <!-- ===== PORTFOLIO ===== -->
-    <section id="portfolio" class="section section--alt">
+    <!-- ===== PORTFOLIO EDITING ===== -->
+    <section id="portfolio" class="section section--paper-alt">
       <div class="section__inner">
         <p class="eyebrow">Portfolio</p>
         <h2 class="section__title">Karya Editing Foto</h2>
-        <p class="portfolio__intro">
+        <p class="section__intro">
           Kumpulan hasil editing foto yang pernah saya buat. Klik gambar untuk melihat versi lebih besar.
         </p>
 
@@ -126,24 +129,49 @@
       </div>
     </section>
 
-    <!-- Lightbox: muncul saat gambar di galeri diklik -->
+    <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
       <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
       <img src="" alt="" id="lightboxImg">
     </div>
 
-    <!-- ===== TESTIMONI ===== -->
-    <section id="testimoni" class="section">
+    <!-- ===== KARYA RAJUTAN ===== -->
+    <section id="rajutan" class="section">
       <div class="section__inner">
-        <p class="eyebrow">Testimoni</p>
-        <h2 class="section__title">Apa kata mereka</h2>
+        <p class="eyebrow">Hobi</p>
+        <h2 class="section__title">Karya Rajutan</h2>
+        <p class="section__intro">
+          Beberapa hasil rajutan yang pernah saya buat di waktu luang.
+        </p>
 
-        <div class="grid" id="testimonialGrid"></div>
+        <div class="gallery" id="rajutanGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONI (pull-quote besar) ===== -->
+    <section id="testimoni" class="quote-panel">
+      <div class="quote-panel__inner">
+        <p class="eyebrow eyebrow--onnavy">Testimoni</p>
+        <blockquote class="quote-panel__quote" id="quoteFeatured"></blockquote>
+        <p class="quote-panel__attr" id="quoteFeaturedAttr"></p>
+      </div>
+      <div class="quote-panel__extra grid" id="testimonialGrid"></div>
+    </section>
+
+    <!-- ===== BUKU YANG SUDAH DIBACA ===== -->
+    <section id="buku" class="section">
+      <div class="section__inner shelf">
+        <div class="shelf__spine" aria-hidden="true">RAK BUKU</div>
+        <div class="shelf__content">
+          <p class="eyebrow">Sedang &amp; Sudah Dibaca</p>
+          <h2 class="section__title">Buku yang Sudah Dibaca</h2>
+          <div class="book-grid" id="bookGrid"></div>
+        </div>
       </div>
     </section>
 
     <!-- ===== BLOG ===== -->
-    <section id="blog" class="section">
+    <section id="blog" class="section section--paper-alt">
       <div class="section__inner">
         <p class="eyebrow">Blog</p>
         <h2 class="section__title">Cerita &amp; Random</h2>
@@ -155,10 +183,10 @@
     </section>
 
     <!-- ===== KONTAK ===== -->
-    <section id="kontak" class="section section--alt kontak">
+    <section id="kontak" class="section kontak">
       <div class="section__inner">
         <p class="eyebrow">Kontak</p>
-        <h2 class="section__title">Mari terhubung</h2>
+        <h2 class="section__title">Mari Terhubung</h2>
         <p class="kontak__text">Terbuka untuk ngobrol, kolaborasi, atau sekadar say hi.</p>
 
         <div class="kontak__links" id="kontakLinks"></div>

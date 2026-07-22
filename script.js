@@ -1,7 +1,5 @@
 // =========================================================
 // AMBIL DATA DARI content/data.json LALU TAMPILKAN KE HALAMAN
-// Semua teks/gambar di website ini sumbernya dari file itu,
-// jadi kalau diedit lewat CMS (/admin), tampilan ini otomatis berubah.
 // =========================================================
 
 async function loadContent() {
@@ -12,8 +10,10 @@ async function loadContent() {
     renderAbout(data.about);
     renderCV(data.cv);
     renderSkills(data.skills);
-    renderPortfolio(data.portfolio);
+    renderGallery("galleryGrid", data.portfolio, "Belum ada karya editing.");
+    renderGallery("rajutanGrid", data.rajutan, "Belum ada karya rajutan.");
     renderTestimonials(data.testimonials);
+    renderBooks(data.books);
     renderBlog(data.blog);
     renderContact(data.contact);
     setupLightbox();
@@ -28,6 +28,7 @@ function renderHero(hero) {
   document.getElementById("heroTitle").innerHTML =
     `${hero.name_line1 || ""}<br>${hero.name_line2 || ""}`;
   document.getElementById("heroTagline").textContent = hero.tagline || "";
+  document.getElementById("heroPhoto").src = (hero.photo) || "";
 }
 
 function renderAbout(about) {
@@ -48,41 +49,48 @@ function timelineItem(item) {
 
 function renderCV(cv) {
   if (!cv) return;
-  const exp = document.getElementById("cvExperience");
-  const edu = document.getElementById("cvEducation");
-  exp.innerHTML = (cv.experience || []).map(timelineItem).join("");
-  edu.innerHTML = (cv.education || []).map(timelineItem).join("");
+  document.getElementById("cvExperience").innerHTML = (cv.experience || []).map(timelineItem).join("");
+  document.getElementById("cvEducation").innerHTML = (cv.education || []).map(timelineItem).join("");
   document.getElementById("certNote").textContent = "🏅 " + (cv.cert_note || "");
 }
 
 function renderSkills(skills) {
   if (!skills) return;
-  const tools = document.getElementById("skillsTools");
-  const langs = document.getElementById("skillsLanguages");
-  tools.innerHTML = (skills.tools || []).map(s => `<span class="pill">${s}</span>`).join("");
-  langs.innerHTML = (skills.languages || []).map(s => `<span class="pill">${s}</span>`).join("");
+  document.getElementById("skillsTools").innerHTML = (skills.tools || []).map(s => `<span class="pill">${s}</span>`).join("");
+  document.getElementById("skillsLanguages").innerHTML = (skills.languages || []).map(s => `<span class="pill">${s}</span>`).join("");
 }
 
-function renderPortfolio(portfolio) {
-  const grid = document.getElementById("galleryGrid");
-  if (!portfolio || portfolio.length === 0) {
-    grid.innerHTML = `<div class="card card--empty"><div class="card--empty__icon">＋</div><p>Belum ada karya. Tambahkan lewat halaman admin.</p></div>`;
+// Dipakai untuk Portfolio Editing & Karya Rajutan (struktur data sama)
+function renderGallery(elementId, items, emptyText) {
+  const grid = document.getElementById(elementId);
+  if (!items || items.length === 0) {
+    grid.innerHTML = `<div class="card card--empty"><div class="card--empty__icon">＋</div><p>${emptyText}</p></div>`;
     return;
   }
-  grid.innerHTML = portfolio.map(item => `
+  grid.innerHTML = items.map(item => `
     <figure class="gallery__item">
-      <img src="${item.image}" alt="${item.caption || "Karya editing foto"}" loading="lazy">
+      <img src="${item.image}" alt="${item.caption || ""}" loading="lazy">
       <figcaption>${item.caption || ""}</figcaption>
     </figure>`).join("");
 }
 
 function renderTestimonials(testimonials) {
-  const grid = document.getElementById("testimonialGrid");
+  const quoteEl = document.getElementById("quoteFeatured");
+  const attrEl = document.getElementById("quoteFeaturedAttr");
+  const extraGrid = document.getElementById("testimonialGrid");
+
   if (!testimonials || testimonials.length === 0) {
-    grid.innerHTML = `<div class="card card--empty"><div class="card--empty__icon">"</div><p>Belum ada testimoni.</p></div>`;
+    quoteEl.textContent = "Belum ada testimoni.";
+    attrEl.textContent = "";
+    extraGrid.innerHTML = "";
     return;
   }
-  grid.innerHTML = testimonials.map(t => `
+
+  const [featured, ...rest] = testimonials;
+  quoteEl.textContent = featured.quote || "";
+  attrEl.textContent = [featured.name, featured.role].filter(Boolean).join(" — ");
+
+  extraGrid.innerHTML = rest.map(t => `
     <div class="testimonial-card">
       <p class="testimonial-card__quote">"${t.quote || ""}"</p>
       <p class="testimonial-card__name">${t.name || ""}</p>
@@ -90,13 +98,24 @@ function renderTestimonials(testimonials) {
     </div>`).join("");
 }
 
+function renderBooks(books) {
+  const grid = document.getElementById("bookGrid");
+  if (!books || books.length === 0) {
+    grid.innerHTML = `<div class="card card--empty"><div class="card--empty__icon">📖</div><p>Belum ada buku yang dicatat.</p></div>`;
+    return;
+  }
+  grid.innerHTML = books.map(b => `
+    <div class="book-card">
+      <div class="book-card__cover"><img src="${b.cover}" alt="Sampul buku ${b.title || ""}" loading="lazy"></div>
+      <p class="book-card__title">${b.title || ""}</p>
+      <p class="book-card__author">${b.author || ""}</p>
+    </div>`).join("");
+}
+
 function renderBlog(blog) {
   if (!blog) return;
-  const tagsWrap = document.getElementById("blogTags");
-  tagsWrap.innerHTML = (blog.tags || []).map(t => `<span class="pill pill--tag">${t}</span>`).join("");
-
-  const grid = document.getElementById("blogGrid");
-  grid.innerHTML = (blog.posts || []).map(post => `
+  document.getElementById("blogTags").innerHTML = (blog.tags || []).map(t => `<span class="pill pill--tag">${t}</span>`).join("");
+  document.getElementById("blogGrid").innerHTML = (blog.posts || []).map(post => `
     <div class="card card--empty">
       <div class="card--empty__icon">✎</div>
       <p>${post.caption || ""}</p>
@@ -108,18 +127,10 @@ function renderContact(contact) {
   const wrap = document.getElementById("kontakLinks");
   const links = [];
 
-  if (contact.email) {
-    links.push({ href: `mailto:${contact.email}`, label: "Email", value: contact.email, external: false });
-  }
-  if (contact.github) {
-    links.push({ href: contact.github, label: "GitHub", value: contact.github_label || contact.github, external: true });
-  }
-  if (contact.instagram) {
-    links.push({ href: contact.instagram, label: "Instagram", value: contact.instagram_label || contact.instagram, external: true });
-  }
-  if (contact.linkedin) {
-    links.push({ href: contact.linkedin, label: "LinkedIn", value: contact.linkedin_label || contact.linkedin, external: true });
-  }
+  if (contact.email) links.push({ href: `mailto:${contact.email}`, label: "Email", value: contact.email, external: false });
+  if (contact.github) links.push({ href: contact.github, label: "GitHub", value: contact.github_label || contact.github, external: true });
+  if (contact.instagram) links.push({ href: contact.instagram, label: "Instagram", value: contact.instagram_label || contact.instagram, external: true });
+  if (contact.linkedin) links.push({ href: contact.linkedin, label: "LinkedIn", value: contact.linkedin_label || contact.linkedin, external: true });
 
   wrap.innerHTML = links.map(l => `
     <a href="${l.href}" class="kontak__link" ${l.external ? 'target="_blank" rel="noopener"' : ""}>
@@ -149,9 +160,7 @@ navLinks.querySelectorAll("a").forEach((link) => {
 });
 
 // =========================================================
-// LIGHTBOX GALERI PORTFOLIO
-// Dipanggil ulang tiap kali galeri baru dirender (setupLightbox)
-// karena gambar-gambarnya dibuat dinamis lewat JavaScript.
+// LIGHTBOX GALERI (dipakai Portfolio & Rajutan)
 // =========================================================
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
@@ -176,12 +185,8 @@ function setupLightbox() {
 }
 
 lightboxClose.addEventListener("click", closeLightbox);
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeLightbox();
-});
+lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLightbox(); });
 
 // =========================================================
 // TAHUN OTOMATIS DI FOOTER
