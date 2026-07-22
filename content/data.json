@@ -33,16 +33,44 @@
     "cert_note": "Sertifikat & penghargaan — menyusul"
   },
   "skills": {
-    "tools": ["HTML", "CSS", "JavaScript (dasar)", "Microsoft Excel", "Microsoft Word", "Editing Foto"],
-    "languages": ["Bahasa Indonesia", "Bahasa Jawa"]
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript (dasar)",
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Editing Foto"
+    ],
+    "languages": [
+      "Bahasa Indonesia",
+      "Bahasa Jawa"
+    ]
   },
   "portfolio": [
-    { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+01", "caption": "Judul karya 1" },
-    { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+02", "caption": "Judul karya 2" },
-    { "image": "https://placehold.co/600x800/131B2E/6F7C97?text=Karya+03", "caption": "Judul karya 3" },
-    { "image": "https://placehold.co/600x600/131B2E/6F7C97?text=Karya+04", "caption": "Judul karya 4" },
-    { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+05", "caption": "Judul karya 5" },
-    { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+06", "caption": "Judul karya 6" }
+    {
+      "image": "/assets/uploads/yb.jpg",
+      "caption": "Judul karya 1"
+    },
+    {
+      "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+02",
+      "caption": "Judul karya 2"
+    },
+    {
+      "image": "https://placehold.co/600x800/131B2E/6F7C97?text=Karya+03",
+      "caption": "Judul karya 3"
+    },
+    {
+      "image": "https://placehold.co/600x600/131B2E/6F7C97?text=Karya+04",
+      "caption": "Judul karya 4"
+    },
+    {
+      "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+05",
+      "caption": "Judul karya 5"
+    },
+    {
+      "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+06",
+      "caption": "Judul karya 6"
+    }
   ],
   "testimonials": [
     {
@@ -52,10 +80,17 @@
     }
   ],
   "blog": {
-    "tags": ["Cerita", "Random"],
+    "tags": [
+      "Cerita",
+      "Random"
+    ],
     "posts": [
-      { "caption": "Tulisan pertama tentang perjalanan hidup akan segera terbit." },
-      { "caption": "Ruang untuk cerita random berikutnya." }
+      {
+        "caption": "Tulisan pertama tentang perjalanan hidup akan segera terbit."
+      },
+      {
+        "caption": "Ruang untuk cerita random berikutnya."
+      }
     ]
   },
   "contact": {
