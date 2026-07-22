@@ -97,6 +97,14 @@ collections:
               - { label: "Gambar", name: "image", widget: "image" }
               - { label: "Judul Karya", name: "caption", widget: "string" }
 
+          - label: "Testimoni"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Kutipan Testimoni", name: "quote", widget: "text" }
+              - { label: "Nama Pemberi Testimoni", name: "name", widget: "string" }
+              - { label: "Jabatan / Hubungan", name: "role", widget: "string" }
+
           - label: "Blog"
             name: "blog"
             widget: "object"
@@ -122,4 +130,3 @@ collections:
               - { label: "Teks Instagram yang ditampilkan", name: "instagram_label", widget: "string", required: false }
               - { label: "Link LinkedIn (kosongkan jika belum ada)", name: "linkedin", widget: "string", required: false }
               - { label: "Teks LinkedIn yang ditampilkan", name: "linkedin_label", widget: "string", required: false }
-              

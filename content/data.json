@@ -44,6 +44,13 @@
     { "image": "https://placehold.co/600x750/131B2E/6F7C97?text=Karya+05", "caption": "Judul karya 5" },
     { "image": "https://placehold.co/600x450/131B2E/6F7C97?text=Karya+06", "caption": "Judul karya 6" }
   ],
+  "testimonials": [
+    {
+      "quote": "Contoh testimoni akan tampil di sini. Edit atau tambah lewat halaman admin.",
+      "name": "Nama Pemberi Testimoni",
+      "role": "Jabatan / Hubungan"
+    }
+  ],
   "blog": {
     "tags": ["Cerita", "Random"],
     "posts": [
@@ -55,8 +62,8 @@
     "email": "Johan.wahyu.saputro.05@gmail.com",
     "github": "https://github.com/johanwahyus",
     "github_label": "github.com/johanwahyus",
-    "instagram": "https://instagram.com/johan.wahyus",
-    "instagram_label": "@johan.wahyus",
+    "instagram": "https://instagram.com/johan_wahyus",
+    "instagram_label": "@johan_wahyus",
     "linkedin": "",
     "linkedin_label": "Belum ada"
   }

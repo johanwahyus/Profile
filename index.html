@@ -6,6 +6,18 @@
 <title>Johan Wahyu Saputro</title>
 <meta name="description" content="Website pribadi Johan Wahyu Saputro — cerita, CV, dan portfolio.">
 
+<!-- Favicon (ikon kecil di tab browser) -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+
+<!-- Preview saat link di-share ke WhatsApp/Instagram/dll -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Johan Wahyu Saputro">
+<meta property="og:description" content="Website pribadi Johan Wahyu Saputro — cerita, CV, dan portfolio.">
+<meta property="og:image" content="https://johanwahyus.netlify.app/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
 <!-- Font: Fraunces untuk judul (berkarakter), Inter untuk teks, JetBrains Mono untuk label kecil -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +41,7 @@
         <li><a href="#pengalaman">CV</a></li>
         <li><a href="#keahlian">Keahlian</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#kontak" class="nav__cta">Kontak</a></li>
       </ul>
@@ -118,6 +131,16 @@
       <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
       <img src="" alt="" id="lightboxImg">
     </div>
+
+    <!-- ===== TESTIMONI ===== -->
+    <section id="testimoni" class="section">
+      <div class="section__inner">
+        <p class="eyebrow">Testimoni</p>
+        <h2 class="section__title">Apa kata mereka</h2>
+
+        <div class="grid" id="testimonialGrid"></div>
+      </div>
+    </section>
 
     <!-- ===== BLOG ===== -->
     <section id="blog" class="section">

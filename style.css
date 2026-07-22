@@ -423,6 +423,41 @@ ul, ol { list-style: none; }
 }
 
 /* =========================================================
+   TESTIMONI
+   ========================================================= */
+.testimonial-card {
+  border: 1px solid var(--navy-600);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  background: var(--navy-800);
+}
+
+.section:not(.section--alt) .testimonial-card {
+  background: var(--navy-800);
+}
+
+.testimonial-card__quote {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--cream-100);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonial-card__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cream-100);
+}
+
+.testimonial-card__role {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--slate-500);
+  margin-top: 2px;
+}
+
+/* =========================================================
    GALERI PORTFOLIO
    ========================================================= */
 .portfolio__intro {

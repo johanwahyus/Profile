@@ -13,6 +13,7 @@ async function loadContent() {
     renderCV(data.cv);
     renderSkills(data.skills);
     renderPortfolio(data.portfolio);
+    renderTestimonials(data.testimonials);
     renderBlog(data.blog);
     renderContact(data.contact);
     setupLightbox();
@@ -73,6 +74,20 @@ function renderPortfolio(portfolio) {
       <img src="${item.image}" alt="${item.caption || "Karya editing foto"}" loading="lazy">
       <figcaption>${item.caption || ""}</figcaption>
     </figure>`).join("");
+}
+
+function renderTestimonials(testimonials) {
+  const grid = document.getElementById("testimonialGrid");
+  if (!testimonials || testimonials.length === 0) {
+    grid.innerHTML = `<div class="card card--empty"><div class="card--empty__icon">"</div><p>Belum ada testimoni.</p></div>`;
+    return;
+  }
+  grid.innerHTML = testimonials.map(t => `
+    <div class="testimonial-card">
+      <p class="testimonial-card__quote">"${t.quote || ""}"</p>
+      <p class="testimonial-card__name">${t.name || ""}</p>
+      <p class="testimonial-card__role">${t.role || ""}</p>
+    </div>`).join("");
 }
 
 function renderBlog(blog) {

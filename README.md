@@ -77,3 +77,24 @@ Karena sekarang website mengambil data lewat `fetch()`, tidak bisa dibuka
 langsung dengan double-click file. Jalankan server lokal dulu, misal pakai
 extension **Live Server** di VS Code, lalu buka `index.html` dari situ.
 
+
+## Fitur tambahan yang baru ditambahkan
+
+- **Favicon** — ikon "JW" kecil di tab browser, filenya `favicon.ico` dan
+  folder `assets/favicon-*.png`. Upload semua file itu ke repo GitHub kamu
+  (di posisi yang sama seperti struktur folder ini, sejajar dengan `index.html`).
+- **Preview saat link di-share** (ke WhatsApp/Instagram/dll) — pakai gambar
+  `assets/og-image.jpg`. Upload juga file ini ke repo.
+- **Testimoni** — section baru, sudah bisa diedit lewat `/admin` (cari
+  bagian "Testimoni"). Tambahkan testimoni asli dari rekan kerja/atasan
+  kapan saja lewat CMS, tanpa perlu edit kode.
+
+## Yang masih perlu kamu lengkapi sendiri
+
+- **Isi blog** — section blog masih placeholder. Kalau sudah siap nulis
+  cerita, tinggal edit lewat `/admin` bagian Blog, atau kasih tau aku
+  tulisannya, nanti aku bantu masukin.
+- **Google Analytics** (opsional) — kalau mau tau statistik pengunjung
+  website, buat akun gratis di analytics.google.com, ambil kode "Tracking
+  ID"-nya (formatnya `G-XXXXXXX`), lalu kasih ke aku atau tempel sendiri
+  potongan kode dari Google Analytics ke bagian `<head>` di `index.html`.
