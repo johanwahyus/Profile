@@ -1,11 +1,98 @@
 {
-  "hero": {
-    "eyebrow": "STAFF OFFICE — INDONESIA",
-    "name_line1": "Johan Wahyu",
-    "name_line2": "Saputro",
-    "tagline": "Manusia yang suka dengan banyak hal.",
-    "photo": "https://placehold.co/720x900/16233F/DCD5C6?text=Foto+Hero"
+  "contact": {
+    "email": "Johan.wahyu.saputro.05@gmail.com",
+    "github": "https://github.com/johanwahyus",
+    "github_label": "github.com/johanwahyus",
+    "instagram": "https://instagram.com/johan.wahyus",
+    "instagram_label": "@johan.wahyus",
+    "linkedin": "",
+    "linkedin_label": "Belum ada"
   },
+  "skills": {
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript (dasar)",
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Editing Foto"
+    ],
+    "languages": [
+      "Bahasa Indonesia",
+      "Bahasa Jawa"
+    ]
+  },
+  "blog": {
+    "tags": [
+      "Cerita",
+      "Random"
+    ],
+    "posts": [
+      {
+        "caption": "Tulisan pertama tentang perjalanan hidup akan segera terbit."
+      },
+      {
+        "caption": "Ruang untuk cerita random berikutnya."
+      }
+    ]
+  },
+  "rajutan": [
+    {
+      "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+01",
+      "caption": "Judul karya rajutan 1"
+    },
+    {
+      "image": "https://placehold.co/600x600/EFEBE1/8A8F7F?text=Rajutan+02",
+      "caption": "Judul karya rajutan 2"
+    },
+    {
+      "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+03",
+      "caption": "Judul karya rajutan 3"
+    }
+  ],
+  "portfolio": [
+    {
+      "image": "/assets/uploads/yb.jpg",
+      "caption": "Vector YB"
+    },
+    {
+      "image": "/assets/uploads/626175606_18328665187169627_2023166285612344786_n.jpg",
+      "caption": "Vector Collab"
+    },
+    {
+      "image": "/assets/uploads/640068530_18569144668019564_1329337692657628641_n.jpg",
+      "caption": "Manipulation Photoshop"
+    },
+    {
+      "image": "https://placehold.co/600x600/16233F/DCD5C6?text=Karya+04",
+      "caption": "Judul karya 4"
+    },
+    {
+      "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+05",
+      "caption": "Judul karya 5"
+    },
+    {
+      "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+06",
+      "caption": "Judul karya 6"
+    }
+  ],
+  "books": [
+    {
+      "cover": "/assets/uploads/9786020633176_.atomic_habit.avif",
+      "title": "Atomic Habits",
+      "author": "James Clear"
+    },
+    {
+      "cover": "/assets/uploads/qvjtc65vbzmexfegzrgs7u.avif",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel"
+    },
+    {
+      "title": "The Richest Man in Babylon",
+      "author": "George S. Clason",
+      "cover": "/assets/uploads/babilonia.avif"
+    }
+  ],
   "about": {
     "photo": "/assets/uploads/whatsapp-image-2026-07-22-at-11.19.36.jpeg",
     "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan.",
@@ -33,48 +120,18 @@
     ],
     "cert_note": "Sertifikat & penghargaan — menyusul"
   },
-  "skills": {
-    "tools": ["HTML", "CSS", "JavaScript (dasar)", "Microsoft Excel", "Microsoft Word", "Editing Foto"],
-    "languages": ["Bahasa Indonesia", "Bahasa Jawa"]
-  },
-  "portfolio": [
-    { "image": "/assets/uploads/yb.jpg", "caption": "Vector YB" },
-    { "image": "/assets/uploads/626175606_18328665187169627_2023166285612344786_n.jpg", "caption": "Vector Collab" },
-    { "image": "/assets/uploads/640068530_18569144668019564_1329337692657628641_n.jpg", "caption": "Manipulation Photoshop" },
-    { "image": "https://placehold.co/600x600/16233F/DCD5C6?text=Karya+04", "caption": "Judul karya 4" },
-    { "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+05", "caption": "Judul karya 5" },
-    { "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+06", "caption": "Judul karya 6" }
-  ],
-  "rajutan": [
-    { "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+01", "caption": "Judul karya rajutan 1" },
-    { "image": "https://placehold.co/600x600/EFEBE1/8A8F7F?text=Rajutan+02", "caption": "Judul karya rajutan 2" },
-    { "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+03", "caption": "Judul karya rajutan 3" }
-  ],
   "testimonials": [
     {
-      "quote": "Contoh testimoni akan tampil di sini sebagai kutipan besar. Edit atau tambah lewat halaman admin.",
-      "name": "Nama Pemberi Testimoni",
-      "role": "Jabatan / Hubungan"
+      "quote": "Young people are in a condition like that of inebriates, and like them, young people are eager, for they are easily deceived because they are quick to hope.",
+      "name": "Aristoteles",
+      "role": "filsuf Yunani"
     }
   ],
-  "books": [
-    { "cover": "https://placehold.co/300x450/16233F/DCD5C6?text=Cover", "title": "Judul Buku 1", "author": "Nama Penulis" },
-    { "cover": "https://placehold.co/300x450/16233F/DCD5C6?text=Cover", "title": "Judul Buku 2", "author": "Nama Penulis" }
-  ],
-  "blog": {
-    "tags": ["Cerita", "Random"],
-    "posts": [
-      { "caption": "Tulisan pertama tentang perjalanan hidup akan segera terbit." },
-      { "caption": "Ruang untuk cerita random berikutnya." }
-    ]
-  },
-  "contact": {
-    "email": "Johan.wahyu.saputro.05@gmail.com",
-    "github": "https://github.com/johanwahyus",
-    "github_label": "github.com/johanwahyus",
-    "instagram": "https://instagram.com/johan.wahyus",
-    "instagram_label": "@johan.wahyus",
-    "linkedin": "",
-    "linkedin_label": "Belum ada"
+  "hero": {
+    "eyebrow": "STAFF OFFICE — INDONESIA",
+    "name_line1": "Johan Wahyu",
+    "name_line2": "Saputro",
+    "tagline": "Manusia yang suka dengan banyak hal.",
+    "photo": "https://placehold.co/720x900/16233F/DCD5C6?text=Foto+Hero"
   }
 }
