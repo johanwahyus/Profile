@@ -6,8 +6,8 @@
     "tagline": "Manusia yang suka dengan banyak hal."
   },
   "about": {
-    "photo": "https://placehold.co/480x480/131B2E/A9B4C7?text=Foto+Profil",
-    "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan. Saat ini saya bekerja sebagai Staff Office, setelah sebelumnya berpengalaman sebagai Customer Service di PT JMTO selama beberapa tahun. Saya orang yang suka dengan banyak hal — mulai dari urusan kantor, editing foto, sampai pelan-pelan belajar membuat website lewat HTML, CSS, dan JavaScript.",
+    "photo": "/assets/uploads/whatsapp-image-2026-07-22-at-11.19.36.jpeg",
+    "text1": "Saya Johan Wahyu Saputro, biasa dipanggil Johan.",
     "text2": "Lewat website ini, saya ingin punya ruang untuk berbagi cerita, pengalaman kerja, dan hal-hal kecil yang saya pelajari sepanjang perjalanan."
   },
   "cv": {
@@ -19,14 +19,14 @@
       },
       {
         "date": "2021 — 2026",
-        "title": "Customer Service — PT JMTO",
+        "title": "Customer Service ",
         "desc": "Menangani layanan pelanggan selama kurang lebih 5 tahun."
       }
     ],
     "education": [
       {
         "date": "Riwayat Pendidikan",
-        "title": "SMA Pilangkenceng",
+        "title": "Sekolah Menengah Atas (SMA)",
         "desc": "Jenjang pendidikan terakhir."
       }
     ],
@@ -52,11 +52,11 @@
       "caption": "Vector YB"
     },
     {
-      "image": "https://www.instagram.com/p/CAiJurjDkjW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "image": "/assets/uploads/626175606_18328665187169627_2023166285612344786_n.jpg",
       "caption": "Vector Collab"
     },
     {
-      "image": "https://www.instagram.com/p/BxJ50qhlgoz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "image": "/assets/uploads/640068530_18569144668019564_1329337692657628641_n.jpg",
       "caption": "Manipulation Photoshop"
     },
     {
