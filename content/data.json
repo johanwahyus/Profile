@@ -38,16 +38,16 @@
   },
   "rajutan": [
     {
-      "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+01",
-      "caption": "Judul karya rajutan 1"
+      "image": "/assets/uploads/whatsapp-image-2026-07-22-at-12.25.13.jpeg",
+      "caption": "Crochet Flower Bouquet"
     },
     {
-      "image": "https://placehold.co/600x600/EFEBE1/8A8F7F?text=Rajutan+02",
-      "caption": "Judul karya rajutan 2"
+      "image": "/assets/uploads/whatsapp-image-2026-07-22-at-12.44.59.jpeg",
+      "caption": "Spiderman Crochet"
     },
     {
-      "image": "https://placehold.co/600x750/EFEBE1/8A8F7F?text=Rajutan+03",
-      "caption": "Judul karya rajutan 3"
+      "image": "/assets/uploads/whatsapp-image-2026-07-22-at-12.25.15.jpeg",
+      "caption": "Crochet Bouquet Blanket"
     }
   ],
   "portfolio": [
@@ -62,18 +62,6 @@
     {
       "image": "/assets/uploads/640068530_18569144668019564_1329337692657628641_n.jpg",
       "caption": "Manipulation Photoshop"
-    },
-    {
-      "image": "https://placehold.co/600x600/16233F/DCD5C6?text=Karya+04",
-      "caption": "Judul karya 4"
-    },
-    {
-      "image": "https://placehold.co/600x750/16233F/DCD5C6?text=Karya+05",
-      "caption": "Judul karya 5"
-    },
-    {
-      "image": "https://placehold.co/600x450/16233F/DCD5C6?text=Karya+06",
-      "caption": "Judul karya 6"
     }
   ],
   "books": [
@@ -132,6 +120,6 @@
     "name_line1": "Johan Wahyu",
     "name_line2": "Saputro",
     "tagline": "Manusia yang suka dengan banyak hal.",
-    "photo": "https://placehold.co/720x900/16233F/DCD5C6?text=Foto+Hero"
+    "photo": "/assets/uploads/whatsapp-image-2026-07-22-at-13.10.37.jpeg"
   }
 }
